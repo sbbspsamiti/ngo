@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-hi="गैलरी | श्री बांके बिहारी शिक्षा प्रसार समिति" data-title-en="Gallery | SBBSPS">गैलरी | श्री बांके बिहारी शिक्षा प्रसार समिति</title>
+<script src="js/i18n.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .filter-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+  .filter-bar button {
+    padding: 10px 22px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text);
+    font-family: inherit;
+  }
+  .filter-bar button.active, .filter-bar button:hover {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    border-color: transparent;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span><i class="fas fa-phone"></i> +91 9559322718</span>
+      <span><i class="fas fa-envelope"></i> bankebiharisikaha@gmail.com</span>
+    </div>
+    <div>
+      <span><i class="fas fa-id-card"></i> CSR: CSR00108288</span>
+      <span class="lang-toggle"><button data-lang="hi">हिं</button><button data-lang="en">EN</button></span>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">श्री</div>
+      <div class="logo-text">
+        <h1 class="hi">श्री बांके बिहारी<br>शिक्षा प्रसार समिति</h1>
+        <h1 class="en">SHRI BANKE BIHARI<br>SHIKSHA PRASAR SAMITI</h1>
+        <p class="hi">शिक्षा • गौ सेवा • असहाय सेवा</p>
+        <p class="en">Education • Gau Seva • Asahay Seva</p>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+      <a href="about.html"><span class="hi">हमारे बारे में</span><span class="en">About</span></a>
+      <a href="activities.html"><span class="hi">शिक्षा</span><span class="en">Education</span></a>
+      <a href="seva.html"><span class="hi">सेवा</span><span class="en">Seva</span></a>
+      <a href="events.html"><span class="hi">कार्यक्रम</span><span class="en">Events</span></a>
+      <a href="gallery.html" class="active"><span class="hi">गैलरी</span><span class="en">Gallery</span></a>
+      <a href="documents.html"><span class="hi">दस्तावेज़</span><span class="en">Documents</span></a>
+      <a href="contact.html"><span class="hi">सम्पर्क</span><span class="en">Contact</span></a>
+      <a href="donate.html" class="btn-donate"><i class="fas fa-heart"></i> <span class="hi">दान</span><span class="en">Donate</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1><span class="hi">फ़ोटो गैलरी</span><span class="en">Photo Gallery</span></h1>
+    <div class="breadcrumb"><a href="index.html"><span class="hi">मुख्य</span><span class="en">Home</span></a> &nbsp;/&nbsp; <span class="hi">गैलरी</span><span class="en">Gallery</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <small><span class="hi">सेवा के क्षण</span><span class="en">Moments of Service</span></small>
+      <h2><span class="hi">हमारे कार्य की झलकियाँ</span><span class="en">Glimpses of Our Work</span></h2>
+      <p><span class="hi">सेवा कार्यों, कार्यक्रमों एवं सामुदायिक गतिविधियों की दृश्य यात्रा।</span><span class="en">A visual journey through our charitable activities and community events.</span></p>
+    </div>
+
+    <div class="filter-bar">
+      <button data-gallery-filter="all" class="active"><span class="hi">सभी</span><span class="en">All</span></button>
+      <button data-gallery-filter="shiksha"><span class="hi">शिक्षा</span><span class="en">Education</span></button>
+      <button data-gallery-filter="gau-seva"><span class="hi">गौ सेवा</span><span class="en">Gau Seva</span></button>
+      <button data-gallery-filter="asahay-seva"><span class="hi">असहाय सेवा</span><span class="en">Asahay Seva</span></button>
+      <button data-gallery-filter="health"><span class="hi">स्वास्थ्य</span><span class="en">Health</span></button>
+      <button data-gallery-filter="environment"><span class="hi">पर्यावरण</span><span class="en">Environment</span></button>
+      <button data-gallery-filter="cultural"><span class="hi">सांस्कृतिक</span><span class="en">Cultural</span></button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Rendered by data-loader.js from data/gallery.json -->
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4><span class="hi">समिति के बारे में</span><span class="en">About Samiti</span></h4>
+        <p class="hi">श्री बांके बिहारी शिक्षा प्रसार समिति 2016 से ललितपुर, उ.प्र. में कार्यरत है।</p>
+        <p class="en">SBBSPS has been working since 2016 in Lalitpur, UP.</p>
+        <div class="social-links">
+          <a href="https://wa.me/919559322718"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div><h4><span class="hi">त्वरित लिंक</span><span class="en">Quick Links</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a></li>
+          <li><a href="about.html"><span class="hi">हमारे बारे में</span><span class="en">About</span></a></li>
+          <li><a href="seva.html"><span class="hi">सेवा</span><span class="en">Seva</span></a></li>
+          <li><a href="events.html"><span class="hi">कार्यक्रम</span><span class="en">Events</span></a></li>
+        </ul>
+      </div>
+      <div><h4><span class="hi">संसाधन</span><span class="en">Resources</span></h4>
+        <ul>
+          <li><a href="documents.html"><span class="hi">दस्तावेज़</span><span class="en">Documents</span></a></li>
+          <li><a href="donate.html"><span class="hi">दान करें</span><span class="en">Donate</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4><span class="hi">सम्पर्क</span><span class="en">Reach Us</span></h4>
+        <p><i class="fas fa-map-marker-alt"></i> <span class="hi">ग्राम बंगरिया, ललितपुर, उ.प्र.</span><span class="en">Gram Bangariya, Lalitpur, UP</span></p>
+        <p><i class="fas fa-phone"></i> +91 9559322718</p>
+        <p><i class="fas fa-envelope"></i> bankebiharisikaha@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 SBBSPS</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/data-loader.js"></script>
+</body>
+</html>

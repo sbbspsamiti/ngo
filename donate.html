@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-hi="दान करें | श्री बांके बिहारी शिक्षा प्रसार समिति" data-title-en="Donate | SBBSPS">दान करें | श्री बांके बिहारी शिक्षा प्रसार समिति</title>
+<script src="js/i18n.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .donate-hero { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; padding: 70px 0 60px; text-align: center; }
+  .donate-method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 30px; }
+  .donate-method { background: #fff; padding: 35px; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; border-top: 4px solid var(--primary); }
+  .donate-method i.method-icon { font-size: 2.8rem; background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 15px; }
+  .donate-method h3 { color: var(--secondary); margin-bottom: 15px; }
+  .bank-table { width: 100%; text-align: left; margin-top: 15px; border-collapse: collapse; }
+  .bank-table td { padding: 8px 5px; border-bottom: 1px dashed var(--border); font-size: 0.95rem; }
+  .bank-table td:first-child { color: var(--text-light); width: 40%; }
+  .bank-table td:last-child { font-weight: 600; color: var(--secondary); }
+  .qr-box { width: 220px; height: 220px; background: #fff; border-radius: var(--radius); margin: 15px auto; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: var(--shadow); }
+  .qr-box img { width: 100%; height: 100%; object-fit: contain; }
+  .upi-id { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; padding: 10px 20px; border-radius: 30px; font-weight: 600; display: inline-block; margin-top: 10px; letter-spacing: 0.5px; }
+  @media (max-width: 768px) { .donate-method-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span><i class="fas fa-phone"></i> +91 9559322718</span>
+      <span><i class="fas fa-envelope"></i> bankebiharisikaha@gmail.com</span>
+    </div>
+    <div>
+      <span><i class="fas fa-id-card"></i> CSR: CSR00108288</span>
+      <span class="lang-toggle"><button data-lang="hi">हिं</button><button data-lang="en">EN</button></span>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">श्री</div>
+      <div class="logo-text">
+        <h1 class="hi">श्री बांके बिहारी<br>शिक्षा प्रसार समिति</h1>
+        <h1 class="en">SHRI BANKE BIHARI<br>SHIKSHA PRASAR SAMITI</h1>
+        <p class="hi">शिक्षा • गौ सेवा • असहाय सेवा</p>
+        <p class="en">Education • Gau Seva • Asahay Seva</p>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <nav class="nav" id="mainNav">
+      <a href="index.html"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+      <a href="about.html"><span class="hi">हमारे बारे में</span><span class="en">About</span></a>
+      <a href="activities.html"><span class="hi">शिक्षा</span><span class="en">Education</span></a>
+      <a href="seva.html"><span class="hi">सेवा</span><span class="en">Seva</span></a>
+      <a href="events.html"><span class="hi">कार्यक्रम</span><span class="en">Events</span></a>
+      <a href="gallery.html"><span class="hi">गैलरी</span><span class="en">Gallery</span></a>
+      <a href="documents.html"><span class="hi">दस्तावेज़</span><span class="en">Documents</span></a>
+      <a href="contact.html"><span class="hi">सम्पर्क</span><span class="en">Contact</span></a>
+      <a href="donate.html" class="btn-donate active"><i class="fas fa-heart"></i> <span class="hi">दान</span><span class="en">Donate</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="donate-hero">
+  <div class="container">
+    <h1 style="font-size: clamp(1.8rem, 4vw, 2.5rem)"><span class="hi">दान करें — बदलाव लाएँ</span><span class="en">Donate — Make a Difference</span></h1>
+    <p style="max-width:700px;margin:15px auto 0;opacity:0.95"><span class="hi">आपका छोटा सा सहयोग किसी के जीवन में बड़ा बदलाव ला सकता है।</span><span class="en">Your small contribution can create a meaningful change in someone's life.</span></p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <small><span class="hi">आपका प्रभाव</span><span class="en">Your Impact</span></small>
+      <h2><span class="hi">हर रुपया मायने रखता है</span><span class="en">Every Rupee Counts</span></h2>
+      <p><span class="hi">अपनी सुविधा अनुसार राशि चुनें। हर दान, छोटा हो या बड़ा, वास्तविक परिवर्तन लाता है।</span><span class="en">Choose an amount that suits you. Every donation brings real change.</span></p>
+    </div>
+    <div class="donate-options">
+      <div class="donate-card"><h3>₹501</h3><p>📚 <span class="hi">1 बच्चे की पुस्तकें एवं कॉपी</span><span class="en">Books & notebooks for 1 child</span></p></div>
+      <div class="donate-card"><h3>₹1,100</h3><p>📚 <span class="hi">यूनिफ़ॉर्म एवं स्कूल बैग</span><span class="en">Uniform + school bag</span></p></div>
+      <div class="donate-card active"><h3>₹2,100</h3><p>📚 <span class="hi">1 बच्चे की 1 माह की निःशुल्क शिक्षा</span><span class="en">Sponsor 1 child's free education for 1 month</span></p></div>
+      <div class="donate-card"><h3>₹5,100</h3><p>🐄 <span class="hi">गौ सेवा - चारा एवं औषधि</span><span class="en">Gau Seva - fodder & medicines</span></p></div>
+      <div class="donate-card"><h3>₹11,000</h3><p>🤝 <span class="hi">असहाय कंबल वितरण शिविर</span><span class="en">Asahay blanket distribution camp</span></p></div>
+      <div class="donate-card"><h3>₹25,000</h3><p>📚 <span class="hi">1 बच्चे को पूरे वर्ष प्रायोजित करें</span><span class="en">Sponsor a child for full year</span></p></div>
+    </div>
+    <p style="text-align:center;margin-top:20px;font-style:italic;color:var(--text-light)"><span class="hi">हर दान मुख्यतः निःशुल्क शिक्षा अभियान में और सहायक सेवा-कार्यों में लगता है।</span><span class="en">Every donation primarily funds our free-education mission and supporting seva works.</span></p>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="section-title">
+      <small><span class="hi">दान कैसे करें</span><span class="en">How to Donate</span></small>
+      <h2><span class="hi">दान करने के अनेक माध्यम</span><span class="en">Multiple Ways to Contribute</span></h2>
+      <p><span class="hi">अपनी सुविधानुसार तरीका चुनें।</span><span class="en">Choose the donation method most convenient for you.</span></p>
+    </div>
+
+    <div class="donate-method-grid">
+
+      <div class="donate-method">
+        <i class="fas fa-mobile-alt method-icon"></i>
+        <h3><span class="hi">UPI / QR कोड</span><span class="en">UPI / QR Code</span></h3>
+        <p><span class="hi">किसी भी UPI ऐप से QR स्कैन करें — Google Pay, PhonePe, Paytm, BHIM</span><span class="en">Scan with any UPI app — Google Pay, PhonePe, Paytm, BHIM</span></p>
+        <div class="qr-box">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=upi://pay?pa=9559322718m@pnb%26pn=Shri%20Banke%20Bihari%20Shiksha%20Prasar%20Samiti%26cu=INR" alt="UPI QR">
+        </div>
+        <p style="margin-top:10px"><strong><span class="hi">UPI ID:</span><span class="en">UPI ID:</span></strong></p>
+        <span class="upi-id">9559322718m@pnb</span>
+      </div>
+
+      <div class="donate-method">
+        <i class="fas fa-university method-icon"></i>
+        <h3><span class="hi">बैंक हस्तांतरण (NEFT/IMPS)</span><span class="en">Bank Transfer (NEFT/IMPS/RTGS)</span></h3>
+        <table class="bank-table">
+          <tr><td><span class="hi">खाता नाम</span><span class="en">Account Name</span></td><td>Shri Banke Bihari Shiksha Prasar Samiti</td></tr>
+          <tr><td><span class="hi">खाता संख्या</span><span class="en">Account No.</span></td><td>1239002100016010</td></tr>
+          <tr><td><span class="hi">बैंक</span><span class="en">Bank Name</span></td><td>Punjab National Bank</td></tr>
+          <tr><td>IFSC <span class="hi">कोड</span></td><td>PUNB0123900</td></tr>
+          <tr><td><span class="hi">खाता प्रकार</span><span class="en">Account Type</span></td><td><span class="hi">बचत</span><span class="en">Savings</span></td></tr>
+          <tr><td>PAN</td><td>ABBAS7128L</td></tr>
+        </table>
+      </div>
+
+      <div class="donate-method">
+        <i class="fas fa-money-check method-icon"></i>
+        <h3><span class="hi">चेक / डिमांड ड्राफ्ट</span><span class="en">Cheque / Demand Draft</span></h3>
+        <p><span class="hi">चेक इस नाम से बनाया जा सकता है:</span><span class="en">Cheques can be drawn in favour of:</span></p>
+        <p style="font-size:1.05rem;color:var(--secondary);font-weight:600;margin:15px 0">"Shri Banke Bihari Shiksha Prasar Samiti"</p>
+        <p><span class="hi">डाक से भेजें:</span><span class="en">Mail to:</span></p>
+        <p style="color:var(--text-light);font-size:0.95rem"><span class="hi">ग्राम बंगरिया, पोस्ट पटौवा, ब्लॉक बिरधा, तहसील पाली, ज़िला ललितपुर, उ.प्र. - 284403</span><span class="en">Gram Bangariya, Post Patauwa, Block Birdha, Tehsil Pali, Dist. Lalitpur, UP - 284403</span></p>
+      </div>
+
+      <div class="donate-method">
+        <i class="fas fa-handshake method-icon"></i>
+        <h3><span class="hi">CSR साझेदारी</span><span class="en">CSR Partnerships</span></h3>
+        <p><span class="hi">हम कॉर्पोरेट कार्य मंत्रालय में पंजीकृत NGO हैं — CSR फंड स्वीकार करने के लिए पात्र।</span><span class="en">We are an MCA-registered NGO eligible to receive Corporate Social Responsibility (CSR) funds.</span></p>
+        <p style="margin:15px 0"><strong>CSR Reg. No.:</strong> CSR00108288<br><strong>PAN:</strong> ABBAS7128L</p>
+        <a href="contact.html" class="btn btn-secondary"><span class="hi">साझेदार बनें</span><span class="en">Partner with Us</span></a>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://wa.me/919559322718?text=Namaste,%20I%20would%20like%20to%20donate%20to%20Shri%20Banke%20Bihari%20Shiksha%20Prasar%20Samiti." target="_blank" class="btn btn-primary" style="background:#25D366;color:#fff;box-shadow:0 6px 20px rgba(37,211,102,0.4)"><i class="fab fa-whatsapp"></i> <span class="hi">WhatsApp पर हमसे बात करें</span><span class="en">Reach us on WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <small><span class="hi">महत्वपूर्ण सूचनाएँ</span><span class="en">Important Notes</span></small>
+      <h2><span class="hi">जानने योग्य बातें</span><span class="en">Things to Know</span></h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-receipt"></i></div>
+        <div class="card-body">
+          <h4><span class="hi">दान रसीद</span><span class="en">Donation Receipt</span></h4>
+          <p><span class="hi">हर दान के लिए रसीद जारी की जाएगी। कृपया लेन-देन विवरण एवं पता हमें ईमेल करें: bankebiharisikaha@gmail.com</span><span class="en">A receipt will be issued for every contribution. Please email transaction details and address to bankebiharisikaha@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="card-body">
+          <h4>80G <span class="hi">कर लाभ</span><span class="en">Tax Benefit</span></h4>
+          <p><span class="hi">हम आयकर अधिनियम की धारा 12A के अंतर्गत पंजीकृत हैं (URN: ABBAS7128LE20251)। 80G के लिए आवेदन प्रक्रिया में है।</span><span class="en">We are registered under Section 12A of the Income Tax Act (URN: ABBAS7128LE20251). Application for 80G is in process.</span></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-lock"></i></div>
+        <div class="card-body">
+          <h4><span class="hi">पारदर्शिता का वचन</span><span class="en">Transparency Promise</span></h4>
+          <p><span class="hi">आपके दान का 100% सीधे सेवा कार्यों में लगता है। वार्षिक रिपोर्ट एवं अंकेक्षित विवरण दस्तावेज़ पृष्ठ पर उपलब्ध हैं।</span><span class="en">100% of your donation goes directly into seva activities. Annual reports and audited financials are on the documents page.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4><span class="hi">समिति के बारे में</span><span class="en">About Samiti</span></h4>
+        <p class="hi">श्री बांके बिहारी शिक्षा प्रसार समिति 2016 से ललितपुर, उ.प्र. में कार्यरत है।</p>
+        <p class="en">SBBSPS has been working since 2016 in Lalitpur, UP.</p>
+        <div class="social-links">
+          <a href="https://wa.me/919559322718"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div><h4><span class="hi">त्वरित लिंक</span><span class="en">Quick Links</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a></li>
+          <li><a href="about.html"><span class="hi">हमारे बारे में</span><span class="en">About</span></a></li>
+          <li><a href="seva.html"><span class="hi">सेवा</span><span class="en">Seva</span></a></li>
+          <li><a href="events.html"><span class="hi">कार्यक्रम</span><span class="en">Events</span></a></li>
+        </ul>
+      </div>
+      <div><h4><span class="hi">संसाधन</span><span class="en">Resources</span></h4>
+        <ul>
+          <li><a href="documents.html"><span class="hi">दस्तावेज़</span><span class="en">Documents</span></a></li>
+          <li><a href="donate.html"><span class="hi">दान करें</span><span class="en">Donate</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4><span class="hi">सम्पर्क</span><span class="en">Reach Us</span></h4>
+        <p><i class="fas fa-map-marker-alt"></i> <span class="hi">ग्राम बंगरिया, ललितपुर, उ.प्र.</span><span class="en">Gram Bangariya, Lalitpur, UP</span></p>
+        <p><i class="fas fa-phone"></i> +91 9559322718</p>
+        <p><i class="fas fa-envelope"></i> bankebiharisikaha@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 SBBSPS</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
