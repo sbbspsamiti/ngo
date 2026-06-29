@@ -78,7 +78,7 @@ window.openEvent = function (id) {
           <span><i class="fas fa-map-marker-alt"></i>${t(e, 'location')}</span>
         </div>
         <p>${t(e, 'description')}</p>
-        ${e.video ? `<iframe class="event-modal-video" src="${e.video}" allowfullscreen></iframe>` : ''}
+        ${e.video ? (e.video.endsWith('.mp4') ? `<video class="event-modal-video" src="${e.video}" controls></video>` : `<iframe class="event-modal-video" src="${e.video}" allowfullscreen></iframe>`) : ''}
         ${e.photos?.length ? `<div class="event-modal-photos">${e.photos.map(p => `<img src="${p}" alt="" loading="lazy" onclick="window.open('${p}','_blank')">`).join('')}</div>` : ''}
       </div>
     </div>`;

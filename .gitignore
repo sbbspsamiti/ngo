@@ -1,0 +1,9 @@
+# Ignore backups & system files
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore very large originals — keep web-optimised copies only
+*-ORIGINAL-*
+*-uncompressed*
