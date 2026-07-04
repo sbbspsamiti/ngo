@@ -46,7 +46,7 @@ function renderEvents(filter = 'all') {
 
   grid.innerHTML = events.map(e => `
     <div class="event-card" onclick="openEvent('${e.id}')">
-      <div class="event-cover" style="background-image:url('${e.cover}')">
+      <div class="event-cover" style="${e.cover ? `background-image:url('${e.cover}')` : `background: linear-gradient(135deg, var(--primary), var(--secondary))`}">
         <span class="event-tag">${t(e, 'category')}</span>
         <span class="event-date">${fmtDate(e.date, lang())}</span>
       </div>
@@ -69,7 +69,7 @@ window.openEvent = function (id) {
   modal.innerHTML = `
     <div class="event-modal-inner">
       <button class="event-modal-close" onclick="closeEvent()" aria-label="Close">×</button>
-      <img class="event-modal-cover" src="${e.cover}" alt="${t(e,'title')}">
+      ${e.cover ? `<img class="event-modal-cover" src="${e.cover}" alt="${t(e,'title')}">` : `<div class="event-modal-cover" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.8rem; font-weight:bold; padding:20px; text-align:center;">${t(e, 'title')}</div>`}
       <div class="event-modal-body">
         <h2>${t(e, 'title')}</h2>
         <div class="event-modal-meta">
@@ -116,13 +116,53 @@ function renderGallery(filter = 'all') {
     </div>`;
     return;
   }
-  grid.innerHTML = items.map(p => `
-    <div class="gallery-item" onclick="window.open('${p.src}','_blank')">
-      <img src="${p.src}" alt="${t(p,'caption')}" loading="lazy">
-      <div class="caption">${t(p, 'caption')}</div>
-    </div>
-  `).join('');
+  grid.innerHTML = items.map(p => {
+    const isVideo = p.src.endsWith('.mp4') || p.type === 'video';
+    if (isVideo) {
+      return `
+        <div class="gallery-item video-item" onclick="openGalleryModal('${p.src}', true, '${t(p, 'caption')}')">
+          <video src="${p.src}" muted loop playsinline preload="metadata" onmouseover="this.play()" onmouseout="this.pause()"></video>
+          <div class="video-play-overlay"><i class="fas fa-play"></i></div>
+          <div class="caption">${t(p, 'caption')}</div>
+        </div>
+      `;
+    } else {
+      return `
+        <div class="gallery-item" onclick="openGalleryModal('${p.src}', false, '${t(p, 'caption')}')">
+          <img src="${p.src}" alt="${t(p,'caption')}" loading="lazy">
+          <div class="caption">${t(p, 'caption')}</div>
+        </div>
+      `;
+    }
+  }).join('');
 }
+
+window.openGalleryModal = function (src, isVideo, caption) {
+  const modal = document.getElementById('galleryModal');
+  if (!modal) return;
+  modal.innerHTML = `
+    <div class="event-modal-inner" style="max-width: 800px; background: transparent; box-shadow: none; overflow: visible;">
+      <button class="event-modal-close" onclick="closeGalleryModal()" aria-label="Close" style="top:-15px; right:-15px; background:var(--primary); box-shadow:0 2px 10px rgba(0,0,0,0.5);">×</button>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px;">
+        ${isVideo ? 
+          `<video src="${src}" controls autoplay style="max-width: 100%; max-height: 75vh; border-radius: var(--radius); box-shadow: var(--shadow-lg); background:#000; display:block;"></video>` : 
+          `<img src="${src}" style="max-width: 100%; max-height: 75vh; border-radius: var(--radius); object-fit: contain; box-shadow: var(--shadow-lg); display:block;">`
+        }
+        <div style="color: #fff; text-align: center; font-size: 1.1rem; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">${caption}</div>
+      </div>
+    </div>`;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeGalleryModal = function () {
+  const modal = document.getElementById('galleryModal');
+  if (!modal) return;
+  const video = modal.querySelector('video');
+  if (video) video.pause();
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+};
 
 // Re-render on language change
 document.addEventListener('langchange', () => {
@@ -157,5 +197,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modal) {
     modal.addEventListener('click', (e) => { if (e.target === modal) closeEvent(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeEvent(); });
+  }
+  const gModal = document.getElementById('galleryModal');
+  if (gModal) {
+    gModal.addEventListener('click', (e) => { if (e.target === gModal) closeGalleryModal(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGalleryModal(); });
   }
 });

@@ -1,14 +1,70 @@
 [
-  { "src": "https://picsum.photos/seed/g1/800/600", "category": "shiksha", "caption_hi": "निःशुल्क कोचिंग कक्षा", "caption_en": "Free coaching class" },
-  { "src": "https://picsum.photos/seed/g2/800/600", "category": "shiksha", "caption_hi": "पुस्तक एवं यूनिफ़ॉर्म वितरण", "caption_en": "Books & uniform distribution" },
-  { "src": "https://picsum.photos/seed/g3/800/600", "category": "shiksha", "caption_hi": "स्कूल बैग वितरण समारोह", "caption_en": "School bag distribution" },
-  { "src": "https://picsum.photos/seed/g4/800/600", "category": "shiksha", "caption_hi": "बेटी पढ़ाओ अभियान", "caption_en": "Beti Padhao initiative" },
-  { "src": "https://picsum.photos/seed/g5/800/600", "category": "gau-seva", "caption_hi": "गौशाला में चारा वितरण", "caption_en": "Fodder distribution at gaushala" },
-  { "src": "https://picsum.photos/seed/g6/800/600", "category": "gau-seva", "caption_hi": "गौ सेवा - औषधि वितरण", "caption_en": "Gau Seva - medicine distribution" },
-  { "src": "https://picsum.photos/seed/g7/800/600", "category": "asahay-seva", "caption_hi": "असहाय कंबल वितरण", "caption_en": "Blanket distribution to needy" },
-  { "src": "https://picsum.photos/seed/g8/800/600", "category": "asahay-seva", "caption_hi": "अन्न दान भंडारा", "caption_en": "Anna Daan bhandara" },
-  { "src": "https://picsum.photos/seed/g9/800/600", "category": "asahay-seva", "caption_hi": "वस्त्र वितरण", "caption_en": "Vastra distribution" },
-  { "src": "https://picsum.photos/seed/g10/800/600", "category": "health", "caption_hi": "निःशुल्क स्वास्थ्य शिविर", "caption_en": "Free health camp" },
-  { "src": "https://picsum.photos/seed/g11/800/600", "category": "environment", "caption_hi": "वृक्षारोपण अभियान", "caption_en": "Tree plantation drive" },
-  { "src": "https://picsum.photos/seed/g12/800/600", "category": "cultural", "caption_hi": "जन्माष्टमी समारोह", "caption_en": "Janmashtami celebration" }
+  {
+    "src": "media/events/shiksha-jagrukta/shiksha-2.jpg",
+    "category": "shiksha",
+    "caption_hi": "शिक्षा जागरूकता कार्यक्रम",
+    "caption_en": "Education Awareness Program"
+  },
+  {
+    "src": "media/events/shiksha-jagrukta/shiksha-3.jpg",
+    "category": "shiksha",
+    "caption_hi": "ग्रामीण क्षेत्रों में शिक्षा जागरूकता",
+    "caption_en": "Education Awareness in Rural Areas"
+  },
+  {
+    "src": "media/events/shiksha-jagrukta/shiksha-4.jpg",
+    "category": "shiksha",
+    "caption_hi": "शिक्षा जागरूकता अभियान",
+    "caption_en": "Education Awareness Drive"
+  },
+  {
+    "src": "media/events/shiksha-jagrukta/video.mp4",
+    "category": "shiksha",
+    "caption_hi": "शिक्षा जागरूकता कार्यक्रम वीडियो",
+    "caption_en": "Education Awareness Program Video",
+    "type": "video"
+  },
+  {
+    "src": "media/events/maholi-centre/maholi-1.jpg",
+    "category": "shiksha",
+    "caption_hi": "महोली केंद्र - निःशुल्क शिक्षा",
+    "caption_en": "Free Education at Maholi Centre"
+  },
+  {
+    "src": "media/events/maholi-centre/maholi-2.jpg",
+    "category": "shiksha",
+    "caption_hi": "महोली केंद्र में बच्चों की शिक्षा",
+    "caption_en": "Children's Education at Maholi Centre"
+  },
+  {
+    "src": "media/events/kambal-vitran-bangaria-2026/kambal-vitran-bangaria-1.jpg",
+    "category": "asahay-seva",
+    "caption_hi": "कंबल वितरण - बंगरिया",
+    "caption_en": "Blanket Distribution - Bangaria"
+  },
+  {
+    "src": "media/events/kambal-vitran-bangaria-2026/kambal-vitran-bangaria-2.jpg",
+    "category": "asahay-seva",
+    "caption_hi": "ज़रूरतमंदों को कंबल वितरण",
+    "caption_en": "Blanket Distribution to Needy"
+  },
+  {
+    "src": "media/events/kambal-vitran-bangaria-2026/kambal-vitran-bangaria-3.jpg",
+    "category": "asahay-seva",
+    "caption_hi": "बंगरिया में कंबल वितरण कार्यक्रम",
+    "caption_en": "Blanket Distribution Program in Bangaria"
+  },
+  {
+    "src": "media/events/kambal-vitran-bangaria-2026/kambal-vitran-bangaria-4.jpg",
+    "category": "asahay-seva",
+    "caption_hi": "असहाय एवं ज़रूरतमंदों की सहायता",
+    "caption_en": "Assisting Helpless & Needy"
+  },
+  {
+    "src": "media/events/independence-day-2025/video.mp4",
+    "category": "cultural",
+    "caption_hi": "स्वतंत्रता दिवस समारोह 2025 वीडियो",
+    "caption_en": "Independence Day Celebration 2025 Video",
+    "type": "video"
+  }
 ]

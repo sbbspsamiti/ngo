@@ -447,7 +447,25 @@ section { padding: 70px 0; }
   position: relative;
 }
 .gallery-item:hover { transform: scale(1.03); box-shadow: var(--shadow-lg); }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-item img, .gallery-item video { width: 100%; height: 100%; object-fit: cover; }
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  font-size: 2.2rem;
+  transition: var(--transition);
+  opacity: 0.9;
+  z-index: 1;
+}
+.gallery-item:hover .video-play-overlay {
+  background: rgba(0,0,0,0.15);
+  opacity: 1;
+  font-size: 2.5rem;
+}
 .gallery-item .caption {
   position: absolute;
   bottom: 0; left: 0; right: 0;
